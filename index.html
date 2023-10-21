@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+<py-script>
+    from prettytable import PrettyTable
+    def func():
+        name = input("Name:")
+        age = int(input("Age:"))
+
+        data = {
+            "name": name,
+            "age": age
+        }
+
+        t = PrettyTable(['name', 'age'])
+            t.add_row([data['name'], data['age']])
+        print(t)
+
+    func()
+</py-script>
+
+</body>
+</html>
